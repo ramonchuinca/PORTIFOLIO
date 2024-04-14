@@ -1,98 +1,129 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;500&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;500&display=swap" rel="stylesheet">
-    <title>Ramon Chuinca</title>
-</head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
 
-<body>
+
+    <title>PortFolio</title>
+  </head>
+
+  <body>
     <div class="caixa-principal" id="home">
-        <nav>
-            <h2 class="portfolio">Portfo<span>lio</span></h2>
-            <ul>
-                <li><a class="link-menu" href="#home">Ho<span>me</span></a></li>
-                <li><a class="link-menu" href="#sobre">Sobre</a></li>
-                <li><a class="link-menu" href="#projetos-id">Projetos</a></li>
-                <li><a class="link-menu" href="#fale-comigo">Fale comigo</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <h2 class="portfolio">Portfo<span>lio</span></h2>
+        <ul>
+          <li>
+            <a class="link-menu" href="#home">Ho<span>me</span></a>
+          </li>
+          <li><a class="link-menu" href="#sobre">Sobre</a></li>
 
-        <div class="meu-nome">
+          <li><a class="link-menu" href="#projetos-id">Projetos</a></li>
+          
+          <li><a class="link-menu" href="#fale-comigo">Fale comigo</a></li>
+        </ul>
+      </nav>
+
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-lg-6 text-center">
             <h1>Ramon <span>Chuinca</span></h1>
             <h3>Programador <span>Front-End</span></h3>
+          </div>
         </div>
-    </div>
+      </div>
 
-    <section id="sobre">
-        <img src="./img/101291937.png">
-        <div>
-            <h2>Sobre mim</h2>
-            <p>
-            Olá me chamo Ramon sou Desenvolvedor Front-End Estou em busca de uma vaga no mercado Desde que me interessei na área da programação, estudo diariamente para conseguir a minha oportunidade. 
-            Há 3 anos venho praticando e colocando em pratica todo meu aprendizado e conhecimento que venho obtendo diariamente 
-            ao longo desse meu caminho sobre a programação e tenho a certeza que estou pronto para somar na sua equipe de programadores. 
-            Tenho facilidade de aprendizado, boa comunicação e a todo momento busco me aprimorar cada vez mais
-            </p>
-            <button>Entre em contato</button>
+      <section id="sobre" class="bg-dark py-5">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <img src="./img/101291937.png" class="img-fluid" alt="Foto de Ramon Chuinca">
+            </div>
+            <div class="col-lg-6">
+              <h2 class="mb-4">Sobre mim</h2>
+              <p class="text-left pr-lg-5">
+                Olá, meu nome é Ramon e sou Desenvolvedor Front-End. Estou em busca de uma vaga no mercado.
+                Desde que me interessei pela área da programação, tenho estudado diariamente para conseguir
+                a minha oportunidade. Ao longo dos últimos 3 anos, tenho praticado e colocado em prática todo
+                o meu aprendizado e conhecimento sobre programação. Estou confiante de que estou pronto para somar
+                à sua equipe de programadores. Tenho facilidade de aprendizado, boa comunicação
+                e estou sempre em busca de me aprimorar.
+              </p>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
+      
+      
 
-    <div class="projetos" id="projetos-id">
-        <h2>Principais Projetos</h2>
-
-        <div class="card-projetos">
-
-            <div class="card">
-                <img src="./img/OIP.jfif">
-                <h5>Projeto Quiz Em React-Js</h5>
-                <p></p>
-                <a href="https://github.com/ramonchuinca/QUIZ-REACT-JS" target="_blank">Ver Projeto</a>
+      <div class="projetos" id="projetos-id">
+        <div class="container">
+          <h2 class="text-center mb-5">Principais Projetos</h2>
+          <div class="row">
+            <div class="col-lg-4 mb-4">
+              <div class="card">
+                <img src="./img/OIP.jfif" class="card-img-top" alt="Imagem do Projeto Quiz em React-JS">
+                <div class="card-body">
+                  <h5 class="card-title">Projeto Quiz Em React-Js</h5>
+                  <a href="https://github.com/ramonchuinca/QUIZ-REACT-JS" class="btn btn-primary" target="_blank">Ver Projeto</a>
+                </div>
+              </div>
+            </div>
+            <!-- Novo Card -->
+            <div class="col-lg-4 mb-4">
+              <div class="card">
+                <img src="./img/novo_projeto.jpg" class="card-img-top" alt="Imagem do Novo Projeto">
+                <div class="card-body">
+                  <h5 class="card-title">Novo Projeto</h5>
+                  <a href="#" class="btn btn-primary" target="_blank">Ver Projeto</a>
+                </div>
+              </div>
             </div>
 
-            <div class="card">
-                <img src="./img/">
-                <h5></h5>
-                <p></p>
-                <a href="" target="_blank">Ver Projeto</a>
+            <div class="col-lg-4 mb-4">
+              <div class="card">
+                <img src="./img/novo_projeto.jpg" class="card-img-top" alt="Imagem do Novo Projeto">
+                <div class="card-body">
+                  <h5 class="card-title">Novo Projeto</h5>
+                  <a href="#" class="btn btn-primary" target="_blank">Ver Projeto</a>
+                </div>
+              </div>
             </div>
-
-            <div class="card">
-                <img src="./img/">
-                <h5></h5>
-                <p></p>
-                <a href="" target="_blank">Ver Projeto</a>
-            </div>
-
+            <!-- Outros projetos -->
+          </div>
         </div>
-    </div>
+      </div>
+      
 
     <footer id="fale-comigo">
-        <h5>Ramon Chuinca</h5>
-        <p></p>
+      <h5>Ramon Chuinca</h5>
+      <p></p>
 
-        <div class="social">
-            <a href="https://www.linkedin.com/in/ramon-chuinca/" target="_blank">
-                <img src="./img/linkedin.png">
-            </a>
+      <div class="social">
+        <a href="https://www.linkedin.com/in/ramon-chuinca/" target="_blank">
+          <img src="./img/linkedin.png" />
+        </a>
 
-            <a href="tel:+556999370-2152">
-                <img src="./img/telefone.png">
-            </a>
+        <a href="tel:+556999370-2152">
+          <img src="./img/telefone.png" />
+        </a>
 
-            <a href="https://github.com/ramonchuinca" target="_blank">
-                <img src="./img/GitHub2.png">
-            </a>
-        </div>
-
+        <a href="https://github.com/ramonchuinca" target="_blank">
+          <img src="./img/GitHub2.png" />
+        </a>
+      </div>
     </footer>
-
-</body>
-
+  </body>
 </html>
