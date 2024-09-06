@@ -81,7 +81,7 @@
 
        <div class="projetos" id="projetos-id">
         <div class="container">
-          <h2 class="text-center mb-5">Principais Projetos</h2>
+          <h2 class="text-center mb-5">Principais <span>Projetos</span></h2>
           <div class="row">
             <div class="col-lg-4 mb-4">
               <div class="card">
@@ -105,10 +105,10 @@
 
             <div class="col-lg-4 mb-4">
               <div class="card">
-                <img src="./img/novo_projeto.jpg" class="card-img-top" alt="Imagem do Novo Projeto">
+                <img src="./img/react_logo_2.png" class="card-img-top" alt="Imagem do Novo Projeto">
                 <div class="card-body">
-                  <h5 class="card-title">Novo Projeto</h5>
-                  <a href="#" class="btn btn-primary" target="_blank">Ver Projeto</a>
+                  <h5 class="card-title">QUIZ-REACT DE PROGRAMAÇÃO</h5>
+                  <a href="https://quiz-react-htm-css-javascript.netlify.app/" class="btn btn-primary" target="_blank">Ver Projeto</a>
                 </div>
               </div>
             </div>
@@ -122,19 +122,71 @@
       <h5>Ramon Chuinca</h5>
       <p></p>
 
-      <div class="social">
-        <a href="https://www.linkedin.com/in/ramon-chuinca/" target="_blank">
-          <img src="./img/linkedin.png" />
-        </a>
-
-        <a href="tel:+556999370-2152">
-          <img src="./img/telefone.png" />
-        </a>
-
-        <a href="https://github.com/ramonchuinca" target="_blank">
-          <img src="./img/GitHub2.png" />
-        </a>
-      </div>
+      <nav>
+        <button type="button" title="Home">
+          <span>Home</span>
+          <span class="material-symbols-outlined" aria-hidden="true">home</span>
+          <svg viewBox="0 0 300 300" aria-hidden="true">
+            <g>
+              <text fill="currentColor">
+                <textPath xlink:href="#circlePath">Home</textPath>
+              </text>
+              <text fill="currentColor">
+                <textPath xlink:href="#circlePath" startOffset="50%">Home</textPath>
+              </text>
+            </g>
+          </svg>
+        </button>
+        <button type="button">
+          <span>About</span>
+          <span class="material-symbols-outlined" aria-hidden="true">info</span>
+          <svg viewBox="0 0 300 300" aria-hidden="true">
+            <g>
+              <text fill="currentColor">
+                <textPath xlink:href="#circlePath">About</textPath>
+              </text>
+              <text fill="currentColor">
+                <textPath xlink:href="#circlePath" startOffset="50%">About</textPath>
+              </text>
+            </g>
+          </svg>
+        </button>
+        <button type="button">
+          <span>Services</span>
+          <span class="material-symbols-outlined" aria-hidden="true">linked_services</span>
+          <svg viewBox="0 0 300 300" aria-hidden="true">
+            <g>
+              <text fill="currentColor">
+                <textPath xlink:href="#circlePath">Services</textPath>
+              </text>
+              <text fill="currentColor">
+                <textPath xlink:href="#circlePath" startOffset="50%">Services</textPath>
+              </text>
+            </g>
+          </svg>
+        </button>
+        <button type="button">
+          <span>Contact</span>
+          <span class="material-symbols-outlined" aria-hidden="true">email</span>
+          <svg viewBox="0 0 300 300">
+            <g>
+              <text fill="currentColor" aria-hidden="true">
+                <textPath xlink:href="#circlePath">Contact</textPath>
+              </text>
+              <text fill="currentColor">
+                <textPath xlink:href="#circlePath" startOffset="50%">Contact</textPath>
+              </text>
+            </g>
+          </svg>
+        </button>
+      </nav>
+      
+      <!-- SVG template with dynamic text -->
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 300 300" width="0" height="0">
+        <defs>
+          <path id="circlePath" d="M 150, 150 m -50, 0 a 50,50 0 0,1 100,0 a 50,50 0 0,1 -100,0" />
+        </defs>
+      </svg>
     </footer>
 
     <script src="./javascript/scripts.js"></script>
