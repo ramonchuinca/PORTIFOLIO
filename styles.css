@@ -6,13 +6,13 @@
 }
 
 .navbar {
-  top:0px;
+  top: 0px;
   width: 100%;
   background-size: cover;
   background-position: center;
-  background-color:#191919; 
+  background-color: #191919;
   position: fixed;
-  z-index:1030;
+  z-index: 1030;
   padding-top: 56px;
 }
 .custom-toggler.red-toggler {
@@ -22,16 +22,16 @@
 .custom-toggler.red-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,0,0,1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
- .caixa-principal {
+.caixa-principal {
   padding: 13%;
-  background-image:url(./img/template.jpg);
+  background-image: url(./img/template.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-size: cover;
-  background-position:center;
+  background-position: center;
   background-repeat: no-repeat;
-  cursor:pointer;
+  cursor: pointer;
   /* height: 50vh;
   min-height: 300px;  */
   /* image-rendering: -webkit-optimize-contrast; */
@@ -43,16 +43,16 @@
   height: 100vh;
   min-height: 300px;
 }
-.nav-link{
-  color:inherit !important;
+.nav-link {
+  color: inherit !important;
 }
 
 a.navbar-brand {
   color: #fff;
-  font-size:2em;
+  font-size: 2em;
   /* font-weight:500; */
   display: flex;
-  text-transform:uppercase;
+  text-transform: uppercase;
 }
 
 .portfolio span {
@@ -89,21 +89,21 @@ li:hover {
 }
 
 .texto-centro {
-  color:#fff;
-  font-size:2rem;
+  color: #fff;
+  font-size: 2rem;
   text-transform: uppercase;
 }
 
 .texto-centro2 {
-  color:#fff;
-  font-size:2rem;
+  color: #fff;
+  font-size: 2rem;
   text-transform: uppercase;
 }
 
 h1 span {
   color: #a7cc15;
   text-transform: uppercase;
-  font-size:2rem;
+  font-size: 2rem;
 }
 
 /* .meu-nome h3 {
@@ -115,7 +115,7 @@ h1 span {
 h3 span {
   color: #a7cc15;
   text-transform: uppercase;
-  font-size:2rem;
+  font-size: 2rem;
 }
 
 /* section {
@@ -129,39 +129,62 @@ h3 span {
 /* } */
 
 section img {
-  padding-top:-15%;
   border-radius: 100%;
-  border: 2px solid #a7cc15;
+  border: 4px solid #a7cc15;
   cursor: pointer;
-  /* margin-left: -86%; */
-  /* margin-right: 0; */
-  /* height: 400px; */
+  height: auto;
+  justify-content: center;
+  text-align: center;
+  left: 21%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: -30px;
+  max-width: 100%;
+}
+
+section img:hover{
+  border: 3px solid #FF5733;;
+  transition: transform 0.5s ease-in-out;
+  transform: scale(1.05);
 }
 
 section div h2 {
   font-size: 3em;
   cursor: pointer;
-  color:#a7cc15 ;
+  color: #a7cc15;
   text-align: center;
   text-transform: uppercase;
+  background-color: #000;
+  border-radius: 10px;
+  border: 3px solid #a7cc15;
+}
+
+section div h2:hover{
+  border: 3px solid #FF5733;;
+  transition: transform 0.5s ease-in-out;
+  transform: scale(1.05);
 }
 
 section div p {
   color: white;
   font-size: 24px;
   margin-top: 30px;
-  background-color:#000;
+  background-color: #000;
   cursor: pointer;
   border-radius: 12px;
-  border: 3pxsolid #a7cc15;
-  /* margin-right: 600px; */
-  /* margin-left: -400px; */
+  border: 3px solid #a7cc15;
+}
+
+.custom-color {
+  color: #a7cc15 /* Escolha a cor desejada */
 }
 
 section div p:hover {
   background-color: black;
-  border: 3px solid orangered;
-  transition: 0.1s;
+  border: 3px solid #FF5733;;
+  transition: transform 0.5s ease-in-out;
+  transform: scale(1.05);
 }
 
 section div button {
@@ -176,11 +199,14 @@ section div button {
   margin-top: 3px;
 }
 
-section div button:hover {
+ section div button:hover {
   background-color: black;
   border: 3px solid #a7cc15;
   transition: 0.5s;
 }
+
+
+
 
 .projetos {
   background-color: #191919;
@@ -188,57 +214,75 @@ section div button:hover {
   padding-bottom: 100px;
 }
 
+
 .projetos h2 {
   color: #fff;
   font-size: 75px;
   text-align: center;
-  background-color: #191919;
+  background-color: #000;
+  border: 3px solid#a7cc15;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
-.projetos span{
-  color:#a7cc15;
-} 
+.projetos h2:hover{
+  border: 3px solid #FF5733;;
+  transition: transform 0.5s ease-in-out;
+  transform: scale(1.05);
+}
 
-.card {
-  background-color: #000000;
-  height: 365px;
-  width: 335px;
-  border-radius: 20px;
-  padding: 20px 35px;
+.projetos span {
+  color: #a7cc15;
+}
+
+.card-custom {
+  background-color: #000; /* Cor de fundo suave */
+  border: 5px solid #a7cc15; /* Borda leve */
+  border-radius: 8px; /* Canto arredondado */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  padding: 20px; /* Espaçamento interno */
+  margin: 15px; /* Espaçamento externo */
+  transition: transform 0.3s, box-shadow 0.3s; /* Animação para hover */
+  color: #fff;
+}
+
+.card-custom:hover {
+  transform: scale(1.05); /* Leve zoom ao passar o mouse */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumentar sombra no hover */
+}
+
+.card-title {
+  font-size: 1.5rem; /* Tamanho do título */
+  margin-bottom: 15px; /* Espaçamento abaixo do título */
+  font-weight: bolder;
+  display: flex;
+  position: relative;
+  justify-content: center;
   text-align: center;
 }
 
-.card h5 {
-  color: BLACK;
-  font-size: 24px;
+
+
+.card-custom .btn {
+  background-color: #a7cc15; /* Cor do botão */
+  color: white; /* Cor do texto do botão */
+  padding: 10px 20px; /* Espaçamento do botão */
+  border-radius: 5px; /* Bordas arredondadas do botão */
+  text-align: center; /* Alinhar o texto no centro */
+  display: block; /* Exibe o botão como bloco */
+  margin: 20px auto; /* Centraliza o botão */
+  width: fit-content; /* Ajusta a largura ao conteúdo */
+  border: 6px solid #FFF;
 }
 
-.card p {
-  color: #e2b9c6;
-  margin-top: 20px;
-  margin-bottom: 40px;
+
+.card-custom .btn:hover {
+  background-color: #FF5733; /* Cor ao passar o mouse */
+  transition: transform 0.5s ease-in-out;
+  transform: scale(1.05);
 }
 
-.card a {
-  background-color: #a7cc15;
-  color: black;
-  padding: 10px 20px;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: 0.5s;
-  text-decoration: none;
-}
 
-.card a:hover {
-  background-color: red;
-  border: 2px solid #a7cc15;
-}
-
-.card-projetos {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 100px;
-}
 
 footer {
   background-color: #000;
@@ -262,37 +306,6 @@ footer p {
   margin-bottom: 30px;
 }
 
-.social {
-  display: flex;
-  gap: 20px;
-}
-
-.social img {
-  height: 24px;
-  border-radius: 50%;
-}
-
-.social a {
-  background-color: #a7cc15;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 50px;
-  width: 50px;
-  cursor: pointer;
-}
-
-.social a:hover {
-  transform: scale(1.3);
-  transition: 0.5s;
-}
-
-
-
-
-
-
 
 /* reset button */
 button {
@@ -312,7 +325,7 @@ button {
   overflow: visible;
 }
 
-body{
+body {
   min-height: 100svh;
   background-color: rgb(15, 23, 42);
   color: white;
@@ -331,11 +344,11 @@ nav {
   gap: 1rem;
   font-size: 1.4rem;
 }
-nav>button {
+nav > button {
   position: relative;
   display: grid;
   place-content: center;
-  grid-template-areas: 'stack';
+  grid-template-areas: "stack";
   padding: 0 1.5rem;
   text-transform: uppercase;
   font-weight: 300;
@@ -343,30 +356,30 @@ nav>button {
 }
 
 /* place button items on top of each other */
-nav>button>span {
+nav > button > span {
   transition: all 300ms ease-in-out;
   grid-area: stack;
 }
 /* nav icon */
-nav>button>span:last-of-type {
+nav > button > span:last-of-type {
   margin-top: 0.25rem;
   transform: scale(0);
   transition-delay: 0ms;
   border-radius: 50%;
 }
 /* hover - hide text */
-nav>button:focus-visible>span:first-of-type,
-nav>button:hover>span:first-of-type {
+nav > button:focus-visible > span:first-of-type,
+nav > button:hover > span:first-of-type {
   transform: scale(0);
 }
 /* hover - reveal icon */
-nav>button:focus-visible>span:last-of-type,
-nav>button:hover>span:last-of-type {
+nav > button:focus-visible > span:last-of-type,
+nav > button:hover > span:last-of-type {
   transform: scale(1);
 }
 
 /* nav SVG circular text*/
-nav>button>svg {
+nav > button > svg {
   position: absolute;
   width: 200px;
   height: 200px;
@@ -377,11 +390,11 @@ nav>button>svg {
   opacity: 0;
   text-transform: uppercase;
   transition: all 300ms ease-in-out;
-  color:#a7cc15;
+  color: #a7cc15;
 }
 /* hover - reveal rotating SVG */
-nav>button:focus-visible>svg,
-nav>button:hover>svg {
+nav > button:focus-visible > svg,
+nav > button:hover > svg {
   transform: translate(-50%, -50%) scale(1);
   opacity: 1;
   transition-delay: 150ms;
@@ -399,18 +412,56 @@ button svg {
 @supports not (-webkit-touch-callout: none) {
 */
 
-
 button svg g {
   transform-origin: center;
   animation: rotate var(--_ani-speed) linear infinite;
 }
 
-
 @keyframes rotate {
   0% {
-      transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
-      transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
+
+
+
+
+/*PARTE RESPONSIVA MOBILE*/
+
+@media (max-width: 430px) {
+  nav > button {
+    position: relative;
+    display:block;
+    place-content: center;
+    grid-template-areas: "stack";
+    padding: 0 1rem; /* Reduz a largura do padding para caber melhor na tela */
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 0.9rem; /* Diminui um pouco o tamanho da fonte */
+    color: aliceblue;
+  }
+   
+  nav > button > svg {
+   
+    width: 40px; /* Reduzi a largura para 40px para telas menores */
+    height: 80px; /* Ajustei a altura para 80px */
+    top: 50%;
+    left: 10%; /* Ajustei a posição para mais centralização */
+    transform: translate(-50%, -50%); /* Mudei o valor de -58% para -50% para centralizar melhor */
+    transform-origin: center;
+    opacity: 0;
+    text-transform: uppercase;
+    transition: all 300ms ease-in-out;
+    color: #a7cc15;
+  }
+
+
+
+  section img {
+    left: -1%;
+  }
+}
+
