@@ -435,8 +435,6 @@ button svg g {
   nav > button {
     position: relative;
     display:block;
-    place-content: center;
-    grid-template-areas: "stack";
     padding: 0 1rem; /* Reduz a largura do padding para caber melhor na tela */
     text-transform: uppercase;
     font-weight: 300;
@@ -456,12 +454,16 @@ button svg g {
     text-transform: uppercase;
     transition: all 300ms ease-in-out;
     color: #a7cc15;
+    display: block;
   }
 
 
 
   section img {
-    left: -1%;
+    left: 8%;
+    width: 80%;
   }
+
+ 
 }
 
