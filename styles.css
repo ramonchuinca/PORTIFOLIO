@@ -217,7 +217,7 @@ section div button {
 
 .projetos h2 {
   color: #fff;
-  font-size: 75px;
+  font-size: 2em;
   text-align: center;
   background-color: #000;
   border: 3px solid#a7cc15;
@@ -285,6 +285,8 @@ section div button {
 
 
 footer {
+  display: flex;
+  flex-wrap: wrap;
   background-color: #000;
   padding-top: 100px;
   padding-bottom: 120px;
@@ -292,6 +294,12 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+footer > div {
+  flex: 1 1 50%; /* Cada item ocupará 50% da largura disponível */
+  box-sizing: border-box; /* Garante que o padding e bordas sejam incluídos no tamanho total */
+  padding: 10px; /* Espaçamento interno, opcional */
 }
 
 footer h5 {
@@ -463,6 +471,43 @@ button svg g {
     left: 8%;
     width: 80%;
   }
+
+ 
+}
+
+@media (max-width: 768px) {
+  nav > button {
+    position: relative;
+    padding: 0 1rem; /* Reduz a largura do padding para caber melhor na tela */
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 0.9rem; /* Diminui um pouco o tamanho da fonte */
+    color: aliceblue;
+  }
+   
+  nav > button > svg {
+   
+    width: 40px; /* Reduzi a largura para 40px para telas menores */
+    height: 80px; /* Ajustei a altura para 80px */
+    top: 50%;
+    left: 10%; /* Ajustei a posição para mais centralização */
+    transform: translate(-50%, -50%); /* Mudei o valor de -58% para -50% para centralizar melhor */
+    transform-origin: center;
+    opacity: 0;
+    text-transform: uppercase;
+    transition: all 300ms ease-in-out;
+    color: #a7cc15;
+    
+  }
+
+  section img {
+    left: 15%;
+    width: 70%;
+  }
+
+  .container, .container-md, .container-sm {
+    max-width: 80% !important;
+}
 
  
 }
