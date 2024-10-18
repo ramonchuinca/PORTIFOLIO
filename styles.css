@@ -143,8 +143,8 @@ section img {
   max-width: 100%;
 }
 
-section img:hover{
-  border: 3px solid #FF5733;;
+section img:hover {
+  border: 3px solid #ff5733;
   transition: transform 0.5s ease-in-out;
   transform: scale(1.05);
 }
@@ -160,8 +160,8 @@ section div h2 {
   border: 3px solid #a7cc15;
 }
 
-section div h2:hover{
-  border: 3px solid #FF5733;;
+section div h2:hover {
+  border: 3px solid #ff5733;
   transition: transform 0.5s ease-in-out;
   transform: scale(1.05);
 }
@@ -177,12 +177,12 @@ section div p {
 }
 
 .custom-color {
-  color: #a7cc15 /* Escolha a cor desejada */
+  color: #a7cc15; /* Escolha a cor desejada */
 }
 
 section div p:hover {
   background-color: black;
-  border: 3px solid #FF5733;;
+  border: 3px solid #ff5733;
   transition: transform 0.5s ease-in-out;
   transform: scale(1.05);
 }
@@ -199,21 +199,17 @@ section div button {
   margin-top: 3px;
 }
 
- section div button:hover {
+section div button:hover {
   background-color: black;
   border: 3px solid #a7cc15;
   transition: 0.5s;
 }
-
-
-
 
 .projetos {
   background-color: #191919;
   padding-top: 50px;
   padding-bottom: 100px;
 }
-
 
 .projetos h2 {
   color: #fff;
@@ -225,8 +221,8 @@ section div button {
   cursor: pointer;
 }
 
-.projetos h2:hover{
-  border: 3px solid #FF5733;;
+.projetos h2:hover {
+  border: 3px solid #ff5733;
   transition: transform 0.5s ease-in-out;
   transform: scale(1.05);
 }
@@ -261,8 +257,6 @@ section div button {
   text-align: center;
 }
 
-
-
 .card-custom .btn {
   background-color: #a7cc15; /* Cor do botão */
   color: white; /* Cor do texto do botão */
@@ -272,17 +266,14 @@ section div button {
   display: block; /* Exibe o botão como bloco */
   margin: 20px auto; /* Centraliza o botão */
   width: fit-content; /* Ajusta a largura ao conteúdo */
-  border: 6px solid #FFF;
+  border: 6px solid #fff;
 }
 
-
 .card-custom .btn:hover {
-  background-color: #FF5733; /* Cor ao passar o mouse */
+  background-color: #ff5733; /* Cor ao passar o mouse */
   transition: transform 0.5s ease-in-out;
   transform: scale(1.05);
 }
-
-
 
 footer {
   display: flex;
@@ -313,7 +304,6 @@ footer p {
   margin-top: 14px;
   margin-bottom: 30px;
 }
-
 
 /* reset button */
 button {
@@ -434,29 +424,28 @@ button svg g {
   }
 }
 
-
-
-
 /*PARTE RESPONSIVA MOBILE*/
 
 @media (max-width: 430px) {
   nav > button {
     position: relative;
-    display:block;
+    display: block;
     padding: 0 1rem; /* Reduz a largura do padding para caber melhor na tela */
     text-transform: uppercase;
     font-weight: 300;
     font-size: 0.9rem; /* Diminui um pouco o tamanho da fonte */
     color: aliceblue;
   }
-   
+
   nav > button > svg {
-   
     width: 40px; /* Reduzi a largura para 40px para telas menores */
     height: 80px; /* Ajustei a altura para 80px */
     top: 50%;
     left: 10%; /* Ajustei a posição para mais centralização */
-    transform: translate(-50%, -50%); /* Mudei o valor de -58% para -50% para centralizar melhor */
+    transform: translate(
+      -50%,
+      -50%
+    ); /* Mudei o valor de -58% para -50% para centralizar melhor */
     transform-origin: center;
     opacity: 0;
     text-transform: uppercase;
@@ -464,15 +453,14 @@ button svg g {
     color: #a7cc15;
     display: block;
   }
-
-
-
   section img {
     left: 8%;
     width: 80%;
   }
 
- 
+  section div p {
+    font-size: 0.9em;
+  }
 }
 
 @media (max-width: 768px) {
@@ -484,20 +472,21 @@ button svg g {
     font-size: 0.9rem; /* Diminui um pouco o tamanho da fonte */
     color: aliceblue;
   }
-   
+
   nav > button > svg {
-   
     width: 40px; /* Reduzi a largura para 40px para telas menores */
     height: 80px; /* Ajustei a altura para 80px */
     top: 50%;
     left: 10%; /* Ajustei a posição para mais centralização */
-    transform: translate(-50%, -50%); /* Mudei o valor de -58% para -50% para centralizar melhor */
+    transform: translate(
+      -50%,
+      -50%
+    ); /* Mudei o valor de -58% para -50% para centralizar melhor */
     transform-origin: center;
     opacity: 0;
     text-transform: uppercase;
     transition: all 300ms ease-in-out;
     color: #a7cc15;
-    
   }
 
   section img {
@@ -505,10 +494,13 @@ button svg g {
     width: 70%;
   }
 
-  .container, .container-md, .container-sm {
+  .container,
+  .container-md,
+  .container-sm {
     max-width: 80% !important;
-}
+  }
 
- 
+  section div p {
+    font-size: 0.9em;
+  }
 }
-
