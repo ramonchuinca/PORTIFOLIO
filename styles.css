@@ -22,22 +22,20 @@
 .custom-toggler.red-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,0,0,1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
+
+.container-pai{
+  width: 100%; /* Ocupar toda a largura do contêiner */
+  height: 70vh; /* Ocupar toda a altura do contêiner */
+}
 .caixa-principal {
-  padding: 13%;
-  background-image: url(./img/template.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  cursor: pointer;
-  /* height: 50vh;
-  min-height: 300px;  */
-  /* image-rendering: -webkit-optimize-contrast; */
-  /* image-rendering: crisp-edges; */
-  /* image-rendering: pixelated; */
-  /* width: 100%; */
+  width: 100%; /* Ocupar toda a largura do contêiner */
+  height: 100%; /* Ocupar toda a altura do contêiner */
+    background-image: url(./img/template.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    box-sizing: border-box;
 }
 .caixa img {
   height: 100vh;
@@ -82,41 +80,41 @@ li:hover {
   color: #fff;
 }
 
+.caixa {
+  position: relative; /* Necessário para o posicionamento absoluto dos filhos */
+  height: 80vh; /* Ajuste a altura conforme necessário */
+  background-image: url(./img/template.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex; /* Usando flexbox para centralizar o conteúdo */
+  align-items: center; /* Centraliza verticalmente */
+  justify-content: center; /* Centraliza horizontalmente */
+}
+
 .meu-nome {
-  position: absolute;
+  position: absolute; /* Para posicionar em relação ao contêiner pai */
   top: 50%;
   left: 7%;
+  transform: translateY(-50%); /* Centraliza verticalmente */
+  z-index: 10; /* Garante que fique acima da imagem */
 }
 
-.texto-centro {
-  color: #fff;
-  font-size: 2rem;
-  text-transform: uppercase;
-}
-
+.texto-centro,
 .texto-centro2 {
   color: #fff;
   font-size: 2rem;
   text-transform: uppercase;
+  z-index: 10; /* Garante que o texto fique acima da imagem */
 }
 
-h1 span {
-  color: #a7cc15;
-  text-transform: uppercase;
-  font-size: 2rem;
-}
-
-/* .meu-nome h3 {
-  color: white;
-  font-size: 25px;
-  display: flex;
-} */
-
+h1 span,
 h3 span {
   color: #a7cc15;
   text-transform: uppercase;
   font-size: 2rem;
 }
+
 
 /* section {
   display: flex;
@@ -158,6 +156,16 @@ section div h2 {
   background-color: #000;
   border-radius: 10px;
   border: 3px solid #a7cc15;
+  position: relative;
+  display: flex;
+  margin-top: 10%;
+}
+
+section h2{
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 section div h2:hover {
@@ -213,7 +221,7 @@ section div button:hover {
 
 .projetos h2 {
   color: #fff;
-  font-size: 2em;
+  font-size: 3.8em;
   text-align: center;
   background-color: #000;
   border: 3px solid#a7cc15;
@@ -461,6 +469,15 @@ button svg g {
   section div p {
     font-size: 0.9em;
   }
+  .caixa{
+    height: 60vh;
+    width: 100%;
+    
+  }
+
+  .projetos h2{
+    font-size: 2em;
+  }
 }
 
 @media (max-width: 768px) {
@@ -503,4 +520,15 @@ button svg g {
   section div p {
     font-size: 0.9em;
   }
+
+  .caixa{
+    height: 60vh;
+    width: 100%;
+    
+  }
+
+  .projetos h2{
+    font-size: 2em;
+  }
+
 }
