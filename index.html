@@ -59,27 +59,37 @@
     <!--CONTAINER BANNER FIM-->
       
 
-      <section id="sobre" class="bg-dark py-5">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-lg-6">
-              <img src="./img/101291937.png" class="img-fluid" alt="Foto Chuinca">
-            </div>
-            <div class="col-lg-6">
-              <h2 class="mb-4">Sobre mim</h2>
-              <p class="text-left pr-lg-5">
-                Olá, me chamo Ramon, Sou um Desenvolvedor Front-End com mais de um ano de experiência com conhecimentos solidos em <span class="custom-color"> HTML, CSS, JavaScript, PHP, Laravel e Vue.js.</span> 
-                Desde que comecei minha jornada na programação, tenho me dedicado intensamente ao aprimoramento de minhas habilidades, aplicando-as diretamente em projetos reais e contribuindo 
-                para o desenvolvimento de soluções web dinâmicas e eficientes.
-                Ao longo dos últimos anos, trabalhei em projetos que exigiram não apenas domínio técnico, mas também a capacidade de colaborar efetivamente com equipes multifuncionais.
-                Sou um entusiasta por aprender novas tecnologias e estou sempre em busca de desafios que expandam meu conhecimento e fortaleçam minha atuação.
-                Estou confiante de que minha experiência, combinada com minha paixão por desenvolvimento web e a habilidade de comunicação, me permite contribuir de forma significativa para sua equipe
-                de programadores. Agradeço pela consideração e estou animado com a oportunidade de colaborar em seus projetos.
-              </p>
+    <section id="sobre" class="bg-dark py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <img src="./img/101291937.png" class="img-fluid" alt="Foto Chuinca">
+          </div>
+          <div class="col-lg-6">
+            <h2 class="mb-4">Sobre mim</h2>
+            <button class="btn btn-primary mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+              CLIQUE-AQUI
+            </button>
+            <div style="min-height: 120px;">
+              <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                <div class="card card-body" style="width: 100%;">
+                  <p class="text-left pr-lg-5">
+                    Olá, me chamo Ramon, Sou um Desenvolvedor Front-End com mais de um ano de experiência com conhecimentos sólidos em 
+                    <span class="custom-color">HTML, CSS, JavaScript, PHP, Laravel e Vue.js.</span> 
+                    Desde que comecei minha jornada na programação, tenho me dedicado intensamente ao aprimoramento de minhas habilidades, aplicando-as diretamente em projetos reais e contribuindo 
+                    para o desenvolvimento de soluções web dinâmicas e eficientes. Ao longo dos últimos anos, trabalhei em projetos que exigiram não apenas domínio técnico, mas também a capacidade de colaborar efetivamente com equipes multifuncionais.
+                    Sou um entusiasta por aprender novas tecnologias e estou sempre em busca de desafios que expandam meu conhecimento e fortaleçam minha atuação.
+                    Estou confiante de que minha experiência, combinada com minha paixão por desenvolvimento web e a habilidade de comunicação, me permite contribuir de forma significativa para sua equipe
+                    de programadores. Agradeço pela consideração e estou animado com a oportunidade de colaborar em seus projetos.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
+    
 
        <div class="projetos" id="projetos-id">
         <div class="container">
@@ -120,76 +130,101 @@
       </div>
       
 
-    <footer id="fale-comigo">
-      <h5>Ramon Chuinca</h5>
-      <p></p>
-
-      <nav>
-        <button type="button" title="Home">
-          <span>Home</span>
-          <span class="material-symbols-outlined" aria-hidden="true">home</span>
-          <svg viewBox="0 0 300 300" aria-hidden="true">
-            <g>
-              <text fill="currentColor">
-                <textPath xlink:href="#circlePath">Home</textPath>
-              </text>
-              <text fill="currentColor">
-                <textPath xlink:href="#circlePath" startOffset="50%">Home</textPath>
-              </text>
-            </g>
-          </svg>
-        </button>
-        <button type="button">
-          <span>Sobre</span>
-          <span class="material-symbols-outlined" aria-hidden="true">info</span>
-          <svg viewBox="0 0 300 300" aria-hidden="true">
-            <g>
-              <text fill="currentColor">
-                <textPath xlink:href="#circlePath">Sobre</textPath>
-              </text>
-              <text fill="currentColor">
-                <textPath xlink:href="#circlePath" startOffset="50%">Sobre</textPath>
-              </text>
-            </g>
-          </svg>
-        </button>
-        <button type="button">
-          <span>Services</span>
-          <span class="material-symbols-outlined" aria-hidden="true">Projetos</span>
-          <svg viewBox="0 0 300 300" aria-hidden="true">
-            <g>
-              <text fill="currentColor">
-                <textPath xlink:href="#circlePath">Services</textPath>
-              </text>
-              <text fill="currentColor">
-                <textPath xlink:href="#circlePath" startOffset="50%">Services</textPath>
-              </text>
-            </g>
-          </svg>
-        </button>
-        <button type="button">
-          <span>Contato</span>
-          <span class="material-symbols-outlined" aria-hidden="true">sociais</span>
-          <svg viewBox="0 0 300 300">
-            <g>
-              <text fill="currentColor" aria-hidden="true">
-                <textPath xlink:href="#circlePath">Contato</textPath>
-              </text>
-              <text fill="currentColor">
-                <textPath xlink:href="#circlePath" startOffset="50%">Contato</textPath>
-              </text>
-            </g>
-          </svg>
-        </button>
-      </nav>
+      <footer id="fale-comigo" class="bg-dark text-light py-5">
+        <div class="container">
+          <div class="row">
+            <!-- Social Media Contact Section -->
+            <div class="col-md-6">
+              <h5>Ramon Chuinca</h5>
+              <p>Entre em contato comigo via redes sociais:</p>
+              <nav>
+                <!-- WhatsApp Button -->
+                <a href="https://wa.me/SeuNumeroAqui" target="_blank" rel="noopener noreferrer">
+                  <button type="button" title="WhatsApp">
+                    <span>WhatsApp</span>
+                    <span class="material-symbols-outlined" aria-hidden="true">whatsapp</span>
+                    <svg viewBox="0 0 300 300" aria-hidden="true">
+                      <g>
+                        <text fill="currentColor">
+                          <textPath xlink:href="#circlePath">WhatsApp</textPath>
+                        </text>
+                        <text fill="currentColor">
+                          <textPath xlink:href="#circlePath" startOffset="50%">WhatsApp</textPath>
+                        </text>
+                      </g>
+                    </svg>
+                  </button>
+                </a>
       
-      <!-- SVG template with dynamic text -->
-      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 300 300" width="0" height="0">
-        <defs>
-          <path id="circlePath" d="M 150, 150 m -50, 0 a 50,50 0 0,1 100,0 a 50,50 0 0,1 -100,0" />
-        </defs>
-      </svg>
-    </footer>
+                <!-- LinkedIn Button -->
+                <a href="https://www.linkedin.com/in/SeuPerfilAqui" target="_blank" rel="noopener noreferrer">
+                  <button type="button" title="LinkedIn">
+                    <span>LinkedIn</span>
+                    <span class="material-symbols-outlined" aria-hidden="true">linkedin</span>
+                    <svg viewBox="0 0 300 300" aria-hidden="true">
+                      <g>
+                        <text fill="currentColor">
+                          <textPath xlink:href="#circlePath">LinkedIn</textPath>
+                        </text>
+                        <text fill="currentColor">
+                          <textPath xlink:href="#circlePath" startOffset="50%">LinkedIn</textPath>
+                        </text>
+                      </g>
+                    </svg>
+                  </button>
+                </a>
+      
+                <!-- Instagram Button -->
+                <a href="https://www.instagram.com/SeuPerfilAqui" target="_blank" rel="noopener noreferrer">
+                  <button type="button" title="Instagram">
+                    <span>Instagram</span>
+                    <span class="material-symbols-outlined" aria-hidden="true">instagram</span>
+                    <svg viewBox="0 0 300 300" aria-hidden="true">
+                      <g>
+                        <text fill="currentColor">
+                          <textPath xlink:href="#circlePath">Instagram</textPath>
+                        </text>
+                        <text fill="currentColor">
+                          <textPath xlink:href="#circlePath" startOffset="50%">Instagram</textPath>
+                        </text>
+                      </g>
+                    </svg>
+                  </button>
+                </a>
+              </nav>
+            </div>
+            
+            <!-- Contact Form Section -->
+            <div class="col-md-6">
+              <h5>Entre em contato por e-mail</h5>
+              <form action="enviar-email.php" method="POST">
+                <div class="mb-3">
+                  <label for="nome" class="form-label">Nome</label>
+                  <input type="text" class="form-control" id="nome" name="nome" required>
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">E-mail</label>
+                  <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="mb-3">
+                  <label for="mensagem" class="form-label">Mensagem</label>
+                  <textarea class="form-control" id="mensagem" name="mensagem" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+              </form>
+              
+            </div>
+          </div>
+        </div>
+      
+        <!-- SVG template with dynamic text -->
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 300 300" width="0" height="0">
+          <defs>
+            <path id="circlePath" d="M 150, 150 m -50, 0 a 50,50 0 0,1 100,0 a 50,50 0 0,1 -100,0" />
+          </defs>
+        </svg>
+      </footer>
+      
 
     <script src="./javascript/scripts.js"></script>
 
