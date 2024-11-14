@@ -21,6 +21,7 @@
   .container img{
     border-radius: 50%;
     border: 3px solid red;
+    width: 250px;
   }
   
   .nav h1,
@@ -141,7 +142,7 @@
   @media screen and (min-width: 360px) {
     .nav h1,
     .slider h1 {
-      font-size: 4vw;
+      font-size: 5vw;
     }
   
     .nav h2,
