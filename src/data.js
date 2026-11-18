@@ -1,36 +1,90 @@
 export const links = [
-  { to: '/#home', label: 'Home' },
-  { to: '/#sobre', label: 'Sobre' },
-  { to: '/#projetos', label: 'Projetos' },
-  { to: '/#contato', label: 'Fale comigo' },
-]
+  { to: "/#home", label: "Home" },
+  { to: "/#sobre", label: "Sobre" },
+  { to: "/#projetos", label: "Projetos" },
+  { to: "/#contato", label: "Fale comigo" },
+];
 
 export const skills = [
-  'HTML5', 'CSS3', 'JavaScript', 'PHP', 'Laravel', 'Vue.js', 'React.js', 'Node.js',
-  'Bootstrap', 'Tailwind CSS', 'MySQL', 'Docker', 'Inteligência Artificial',
-]
+  "HTML5",
+  "CSS3",
+  "JavaScript",
+  "PHP",
+  "Laravel",
+  "Vue.js",
+  "React.js",
+  "Node.js",
+  "Bootstrap",
+  "Tailwind CSS",
+  "MySQL",
+  "Docker",
+  "Inteligência Artificial",
+];
 
-// Para usar a capa de um projeto, coloque a imagem em public/img/ e informe em "image" (ex.: '/img/2.jpeg').
+// Para adicionar um projeto, inclua um objeto nesta lista.
+// - image: screenshot em public/img/projetos/ (ex.: '/img/projetos/nome.jpg', proporção 16:9). Sem imagem, o card usa um fundo colorido (grad).
+// - category: usada nos filtros da seção. Categorias novas aparecem sozinhas.
+// - repo: opcional, mostra o link "Código" no card.
 export const projects = [
-  { title: 'Landing page de clínica', icon: '🩺', grad: 'from-teal-600/40 to-cyan-900/40', image: null,
-    desc: 'Landing page voltada ao agendamento de consultas de uma clínica.',
-    tags: ['HTML', 'CSS', 'JavaScript'], url: 'https://ramonchuinca.github.io/trabalho_faculdade_land_page-/' },
-  { title: 'Tema Natureza', icon: '🌿', grad: 'from-green-600/40 to-emerald-900/40', image: null,
-    desc: 'Projeto de interface com tema voltado à natureza.',
-    tags: ['Vue.js', 'Tailwind'], url: 'https://naturezatema.netlify.app/' },
-  { title: 'Quiz de programação', icon: '🧠', grad: 'from-sky-600/40 to-blue-900/40', image: null,
-    desc: 'Quiz interativo sobre programação feito com React.',
-    tags: ['React', 'JavaScript'], url: 'https://quiz-react-htm-css-javascript.netlify.app/' },
-  { title: 'Sistema de gestão', icon: '📋', grad: 'from-violet-600/40 to-indigo-900/40', image: null,
-    desc: 'Sistema para gerenciamento e criação de projetos.',
-    tags: ['Vue.js', 'Node.js'], url: 'https://gestaodeprogetos.netlify.app/' },
-  { title: 'Conversor de moedas', icon: '💱', grad: 'from-amber-600/40 to-orange-900/40', image: null,
-    desc: 'Converta valores entre diferentes moedas.',
-    tags: ['React Native'], url: 'https://conversordemo.netlify.app/' },
-]
+  {
+    title: "Tema Natureza",
+    category: "Site",
+    grad: "from-emerald-500/50 to-green-950",
+    image: "/img/projetos/natureza.jpg",
+    desc: "Site sobre fauna, plantas e rios da Amazônia, com animações de rolagem e partículas.",
+    tags: ["Vue.js", "Tailwind", "GSAP"],
+    url: "https://naturezatema.netlify.app/",
+    repo: "https://github.com/ramonchuinca/Tema-Natureza",
+  },
+  {
+    title: "Sistema de gestão",
+    category: "Aplicação web",
+    grad: "from-violet-500/50 to-indigo-950",
+    image: "/img/projetos/gestao.jpg",
+    desc: "Cadastro de grupos, unidades e colaboradores, com validação de CPF e CNPJ e exportação para Excel.",
+    tags: ["Vue.js", "Node.js"],
+    url: "https://gestaodeprogetos.netlify.app/",
+  },
+  {
+    title: "Quiz de programação",
+    category: "Aplicação web",
+    grad: "from-fuchsia-500/50 to-purple-950",
+    image: "/img/projetos/quiz.jpg",
+    desc: "Quiz interativo com perguntas sobre programação.",
+    tags: ["React", "JavaScript"],
+    url: "https://quiz-react-htm-css-javascript.netlify.app/",
+  },
+  {
+    title: "Conversor de moedas",
+    category: "Aplicação web",
+    grad: "from-sky-500/50 to-blue-950",
+    image: "/img/projetos/conversor.jpg",
+    desc: "Converte valores entre USD, BRL, EUR, GBP e outras moedas.",
+    tags: ["React Native"],
+    url: "https://conversordemo.netlify.app/",
+  },
+  {
+    title: "Vitalis Clínica",
+    category: "Aplicação web",
+    grad: "from-teal-500/50 to-cyan-950",
+    image: null,
+    desc: "Agendamento de consultas: o paciente escolhe serviço, médico e horário, e a recepção confirma.",
+    tags: ["HTML", "CSS", "JavaScript"],
+    url: "https://ramonchuinca.github.io/trabalho_faculdade_land_page-/",
+    repo: "https://github.com/ramonchuinca/trabalho_faculdade_land_page-",
+  },
+];
 
 export const socials = [
-  { name: 'WhatsApp', url: 'https://wa.me/69993702152', cls: 'bg-green-600' },
-  { name: 'LinkedIn', url: 'https://www.linkedin.com/in/ramon-chuinca/', cls: 'bg-blue-600' },
-  { name: 'GitHub', url: 'https://github.com/ramonchuinca', cls: 'bg-slate-700' },
-]
+  { name: "WhatsApp", url: "https://wa.me/69993702152", cls: "bg-green-600" },
+  {
+    name: "LinkedIn",
+    url: "https://www.linkedin.com/in/ramon-chuinca/",
+    cls: "bg-blue-600",
+  },
+  {
+    name: "GitHub",
+    url: "https://github.com/ramonchuinca",
+    cls: "bg-slate-700",
+  },
+];
