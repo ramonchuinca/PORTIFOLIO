@@ -11,7 +11,7 @@ import { skills } from '../data'
             class="aspect-square w-64 rounded-full border-4 border-brand object-cover shadow-2xl shadow-brand/10 transition duration-500 hover:scale-105 sm:w-80 lg:w-96" />
         </div>
         <div>
-          <h2 class="text-3xl font-extrabold uppercase sm:text-4xl">Sobre <span class="text-brand">mim</span></h2>
+          <h2 class="text-3xl font-extrabold tracking-tight sm:text-4xl">Sobre mim</h2>
           <div class="mt-6 space-y-4 text-slate-300">
             <p>Sou desenvolvedor Front-End com mais de dois anos de experiência e conhecimentos sólidos em
               <span class="font-semibold text-brand">HTML, CSS, JavaScript, PHP, Laravel, Vue.js, MySQL e Docker</span>.</p>

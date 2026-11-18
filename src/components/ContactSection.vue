@@ -8,7 +8,7 @@ const next = `${window.location.origin}/obrigado`
   <section id="contato" class="px-4 py-20 sm:px-6">
     <div class="mx-auto grid max-w-6xl gap-10 md:grid-cols-2">
       <div>
-        <h2 class="text-3xl font-extrabold sm:text-4xl">Fale <span class="text-brand">comigo</span></h2>
+        <h2 class="text-3xl font-extrabold tracking-tight sm:text-4xl">Fale comigo</h2>
         <p class="mt-4 text-slate-400">Entre em contato pelas redes sociais ou me envie uma mensagem.</p>
         <div class="mt-6 flex flex-wrap gap-3">
           <a v-for="s in socials" :key="s.name" :href="s.url" target="_blank" rel="noopener"
