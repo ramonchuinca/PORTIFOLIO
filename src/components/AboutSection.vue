@@ -26,11 +26,11 @@ import { skills } from '../data'
 
       <div class="mt-16 grid gap-6 lg:grid-cols-2">
         <article class="rounded-2xl border border-white/10 bg-panel p-6">
-          <h3 class="text-lg font-bold uppercase tracking-wide text-brand">Objetivo profissional</h3>
+          <h3 class="text-lg font-bold leading-snug">Objetivo profissional</h3>
           <p class="mt-4 text-slate-300">Atuar como Desenvolvedor Front-End ou Desenvolvedor Web, contribuindo para a criação, evolução e manutenção de aplicações web. Busco aplicar minha experiência prática, conhecimentos técnicos e capacidade de resolução de problemas em projetos desafiadores, além de continuar evoluindo profissionalmente e acompanhando as novas tecnologias do mercado.</p>
         </article>
         <article class="rounded-2xl border border-white/10 bg-panel p-6">
-          <h3 class="text-lg font-bold uppercase tracking-wide text-brand">Resumo profissional</h3>
+          <h3 class="text-lg font-bold leading-snug">Resumo profissional</h3>
           <div class="mt-4 space-y-3 text-slate-300">
             <p>Desenvolvedor Web com quase 3 anos de experiência profissional na área de desenvolvimento de software, atuando na criação, implementação e manutenção de páginas e aplicações web.</p>
             <p>Possuo conhecimentos em HTML5, CSS3, JavaScript, PHP, Laravel, Vue.js, React.js, Node.js, Bootstrap e Tailwind CSS, além de conhecimentos em bancos de dados relacionais, especialmente MySQL.</p>
