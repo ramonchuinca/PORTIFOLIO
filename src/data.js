@@ -17,7 +17,7 @@ export const projects = [
     tags: ['HTML', 'CSS', 'JavaScript'], url: 'https://ramonchuinca.github.io/trabalho_faculdade_land_page-/' },
   { title: 'Tema Natureza', icon: '🌿', grad: 'from-green-600/40 to-emerald-900/40', image: null,
     desc: 'Projeto de interface com tema voltado à natureza.',
-    tags: ['HTML', 'CSS'], url: 'https://ramonchuinca.github.io/Tema-Natureza/' },
+    tags: ['Vue.js', 'Tailwind'], url: 'https://naturezatema.netlify.app/' },
   { title: 'Quiz de programação', icon: '🧠', grad: 'from-sky-600/40 to-blue-900/40', image: null,
     desc: 'Quiz interativo sobre programação feito com React.',
     tags: ['React', 'JavaScript'], url: 'https://quiz-react-htm-css-javascript.netlify.app/' },
